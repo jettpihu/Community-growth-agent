@@ -262,6 +262,19 @@ Without `tavily-python` or `TAVILY_API_KEY`, the agent still runs; speaker/venue
 .
 ├── agent.py      # uAgent + chat protocol; Tavily search + ASI:One chat
 └── README.md
+
+---
+
+## ⚠️ PR Testing (Intentional, Reversible)
+
+This repository includes a deliberately failing test used only for PR and CI validation.
+
+- File: `tests/test_agent.py`
+- Purpose: Demonstrate CI failure and PR checks without modifying core functionality.
+- Action: Remove or update this test before merging into the `main` branch.
+
+Use this to validate your agent's behavior when handling PRs and CI failures.
+
 ```
 
 ---
